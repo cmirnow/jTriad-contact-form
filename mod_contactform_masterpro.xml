@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+  <name>jTriad contact form</name>
+  <creationDate>May 2016</creationDate>
+  <author>Masterpro project</author>
+  <authorEmail>info@masterpro.ws</authorEmail>
+  <authorUrl>http://masterpro.ws</authorUrl>
+  <copyright>Copyright 2014 Alexey Smirnov. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>0.7b</version>
+  <description><![CDATA[<p><a title="Web programming. Masterpro project" href="http://masterpro.ws" target="_blank"><img src="/modules/mod_contactform_masterpro/img/logo.jpg" alt="Web programming" /></a></p><p>Extended form of sending messages from Masterpro project.</p>]]></description>
+  <files>
+    <filename module="mod_contactform_masterpro">mod_contactform_masterpro.php</filename>
+    <filename>mod_contactform_masterpro.xml</filename>
+    <filename>index.html</filename>
+    <filename>ModContactformMasterproMailSettings.class.php</filename>
+    <filename>helper.php</filename>
+    <folder>tmpl</folder>
+    <folder>assets</folder>
+    <folder>img</folder>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="email1" type="text" default="" label="email1" description="Enter the first administrative email (optional)"/>
+        <field name="email2" type="text" default="" label="email2" description="Enter the second administrative email (optional)"/>
+        <field name="email3" type="text" default="" label="email3" description="Enter the third administrative email (optional)"/>
+        <field name="name" type="text" default="First_name" label="name" description="Enter the name of the first field"/>
+        <field name="your_city" type="text" default="city" label="city" description="Enter the name of the second field"/>
+        <field name="mobile_phone" type="text" default="Phone" label="phone" description="Enter the name of the third field"/>
+        <field name="job_vacancy" type="text" default="Vacancy" label="vacancy" description="Enter the name of the fourth field"/>
+        <field name="experience" type="text" default="experience" label="vacancy" description="Enter the name of the fifth field"/>
+        <field name="additionally" type="text" default="Additionally" label="additionally" description="Enter the name of the sixth field"/>
+        <field name="textarea" type="textarea" default="Chicago + php programmer + mail@gmail.com" label="town + vacancy + email" description="Enter the triad: town + vacancy + email"/>
+      </fieldset>
+    </fields>
+  </config>
+</extension>
